@@ -88,17 +88,37 @@
     }
 
     .grid{
+        margin: 15px 0;
         display: grid;
-        grid-template-columns: 300px 300px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
     }
 
     .grid img{
         width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
     }
+
+    .grid img:hover{
+        transform: scale(1.5);
+    }
+
+    .dark{
+        background: black;
+        color: white;
+    }
+
+    .dark .container{
+        background: grey;
+    }
+
 
 </style>
 <body>
-    <button class="theme-button"> Dark Theme</button>
+    <button class="theme-button"> Change Theme</button>
     <div class="container">
     <h1>South Africa</h1>
     <h2>My birth country</h2>
@@ -115,5 +135,20 @@
     <button><a href="https://www.britannica.com/place/South-Africa" class="link">Learn more about South Africa</a></button>
     </div>
     <footer> Coded by Thembelihle Nkosi 🩵</footer>
+
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body");
+            
+            if (body.classList.contains("dark")){
+                body.classList.remove("dark");
+            }else{
+                body.classList.add("dark");
+            }
+        }
+      let  themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+
 </body>
 </html>
