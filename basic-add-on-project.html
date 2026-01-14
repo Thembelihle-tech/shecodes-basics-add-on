@@ -107,7 +107,7 @@
     }
 
     .dark{
-        background: black;
+        background: linear-gradient(to right, grey, black);
         color: white;
     }
 
@@ -132,19 +132,15 @@
     </div>
     <p>South Africa, the southernmost country on the African continent, renowned for its varied topography, great natural beauty, and cultural diversity, all of which have made the country a favored destination for travelers since the legal ending of apartheid (Afrikaans: “apartness,” or racial separation) in 1994.</p>
 
-    <button><a href="https://www.britannica.com/place/South-Africa" class="link">Learn more about South Africa</a></button>
+    <button><a href="https://www.britannica.com/place/South-Africa" class="link">📖 Learn more about South Africa</a></button>
     </div>
-    <footer> Coded by Thembelihle Nkosi 🩵</footer>
+    <footer> Coded by Thembelihle Nkosi 🩵 with HTLM, CSS, & JavaScript</footer>
 
     <script>
         function changeTheme() {
             let body = document.querySelector("body");
             
-            if (body.classList.contains("dark")){
-                body.classList.remove("dark");
-            }else{
-                body.classList.add("dark");
-            }
+            body.classList.toggle("dark");
         }
       let  themeButton = document.querySelector(".theme-button");
       themeButton.addEventListener("click", changeTheme);
