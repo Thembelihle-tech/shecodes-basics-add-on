@@ -11,14 +11,85 @@
         background: linear-gradient(to right, lightblue, grey);
     }
 
+    h1{
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    button{
+        display: block;
+        margin: 0 auto;
+        border: 1px solid lightblue;
+        background: white;
+        font-size: 18px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+    }
+
+    button:hover{
+        background: lightblue;
+        cursor: pointer;
+    }
+
+    .link{
+        text-decoration: none;
+        color: black;
+    }
+
+    .container{
+        max-width: 600px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+    }
+
+    footer{
+        text-align: center;
+        margin: 10px 0;
+        color: white;
+    }
+
+    .theme-button{
+        font-size: 10px;
+        background: black;
+        border: black;
+        color: white;
+        padding: 5 8px;
+    }
+
+    .theme-button:hover{
+        color: black;
+        border: white;
+        background-color: white;
+    }
+
+    .southafrican-picture{
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+    }
+
+    .southafrican-picture:hover{
+       filter: contrast(50%);
+        transform: scale(1.2);
+    }
+
 </style>
 <body>
-    <button> Dark Theme</button>
-
+    <button class="theme-button"> Dark Theme</button>
+    <div class="container">
     <h1>South Africa</h1>
     <h2>My birth country</h2>
 
-    <img src="https://www.mappr.co/wp-content/uploads/2024/02/south-african-flag-map-1024x768.jpg" alt="southafrica">
+    <a href="https://en.wikipedia.org/wiki/South_Africa" target="_blank"><img src="https://www.mappr.co/wp-content/uploads/2024/02/south-african-flag-map-1024x768.jpg" alt="southafrica" class="southafrican-picture"></a>
     <img src="https://springboks.rugby/media/q5inqbcx/231028-springboks-rwc-trophy-lift.jpg" alt="rugbyteam">
     <img src="https://africantravelcanvas.com/wp-content/uploads/2018/09/Heritage-Day-South-Africa-King-Protea-1080x621.jpg" alt="nationalflower">
     <img src="https://www.cruiseandtravel.co.uk/_gatsby/file/696a138adc3b5ddf3a0cdbe5edbf8e48/98136_2CK09C2-1-1024x689.jpg" alt="tablemountain">
@@ -26,7 +97,8 @@
 
     <p>South Africa, the southernmost country on the African continent, renowned for its varied topography, great natural beauty, and cultural diversity, all of which have made the country a favored destination for travelers since the legal ending of apartheid (Afrikaans: “apartness,” or racial separation) in 1994.</p>
 
-    <button><a href="https://www.britannica.com/place/South-Africa">Learn more about South Africa</a></button>
+    <button><a href="https://www.britannica.com/place/South-Africa" class="link">Learn more about South Africa</a></button>
+    </div>
     <footer> Coded by Thembelihle Nkosi 🩵</footer>
 </body>
 </html>
