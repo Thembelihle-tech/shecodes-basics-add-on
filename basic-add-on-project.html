@@ -23,6 +23,11 @@
         max-width: 100%;
     }
 
+    p{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
     button{
         display: block;
         margin: 0 auto;
@@ -78,8 +83,17 @@
     }
 
     .southafrican-picture:hover{
-       filter: contrast(50%);
+       filter: contrast(80%);
         transform: scale(1.2);
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 300px 300px;
+    }
+
+    .grid img{
+        width: 100%;
     }
 
 </style>
@@ -90,11 +104,12 @@
     <h2>My birth country</h2>
 
     <a href="https://en.wikipedia.org/wiki/South_Africa" target="_blank"><img src="https://www.mappr.co/wp-content/uploads/2024/02/south-african-flag-map-1024x768.jpg" alt="southafrica" class="southafrican-picture"></a>
+    <div class="grid">
     <img src="https://springboks.rugby/media/q5inqbcx/231028-springboks-rwc-trophy-lift.jpg" alt="rugbyteam">
     <img src="https://africantravelcanvas.com/wp-content/uploads/2018/09/Heritage-Day-South-Africa-King-Protea-1080x621.jpg" alt="nationalflower">
     <img src="https://www.cruiseandtravel.co.uk/_gatsby/file/696a138adc3b5ddf3a0cdbe5edbf8e48/98136_2CK09C2-1-1024x689.jpg" alt="tablemountain">
     <img src="https://static.tildacdn.com/tild3061-3633-4466-b263-326237343431/zulu_tribe.jpeg" alt="zulu">
-
+    </div>
     <p>South Africa, the southernmost country on the African continent, renowned for its varied topography, great natural beauty, and cultural diversity, all of which have made the country a favored destination for travelers since the legal ending of apartheid (Afrikaans: “apartness,” or racial separation) in 1994.</p>
 
     <button><a href="https://www.britannica.com/place/South-Africa" class="link">Learn more about South Africa</a></button>
